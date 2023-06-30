@@ -1,0 +1,131 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please provide your feedback by filling out the form below:</p>
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label">Age:</label>
+        <input type="number" id="number" name="number" placeholder="Enter your age" required min="1" max="100">
+      </div>
+      <div class="form-group">
+        <label for="dropdown">Gender:</label>
+        <select id="dropdown" name="dropdown" required>
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="5" placeholder="Enter your feedback" required></textarea>
+      </div>
+      <div class="form-group checkbox-group">
+        <label>What would you like to improve?</label>
+        <label><input type="checkbox" name="improve" value="Front end">Front end</label>
+        <label><input type="checkbox" name="improve" value="Back end">Back end</label>
+        <label><input type="checkbox" name="improve" value="Data Analysis">Data Analysis</label>
+        <label><input type="checkbox" name="improve" value="Coding">Coding</label>
+        <label><input type="checkbox" name="improve" value="Photography">Photography</label>
+        <label><input type="checkbox" name="improve" value="Web Design">Web Design</label>
+        <label><input type="checkbox" name="improve" value="Graphic Design">Graphic Design</label>
+        <label><input type="checkbox" name="improve" value="Other">Other</label>
+      </div>
+      <div class="form-group">
+        <label>Rate your experience:</label>
+        <label><input type="radio" name="rating" value="1" required>1</label>
+        <label><input type="radio" name="rating" value="2" required>2</label>
+        <label><input type="radio" name="rating" value="3" required>3</label>
+        <label><input type="radio" name="rating" value="4" required>4</label>
+        <label><input type="radio" name="rating" value="5" required>5</label>
+      </div>
+      <button class="btn" type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=2000");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the transparency here */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    color: #333333;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555555;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+  }
+
+  .checkbox-group label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+** end of undefined **
+
